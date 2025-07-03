@@ -16,6 +16,15 @@ layout {
                       border_format   "#[fg=#6C7086]{char}"
                       border_position "top"
 
+                       frame_selected {
+            base 137 180 250
+            background 0
+            emphasis_0 239 159 118
+            emphasis_1 153 209 219
+            emphasis_2 244 184 228
+            emphasis_3 0
+        }
+
                       mode_normal        "#[bg=#89b4fa,fg=#181926,bold] NORMAL#[bg=#181926,fg=#89b4fa]█"
                       mode_locked        "#[bg=#6e738d,fg=#181926,bold] LOCKED #[bg=#181926,fg=#6e738d]█"
                       mode_resize        "#[bg=#f38ba8,fg=#181926,bold] RESIZE#[bg=#181926,fg=#f38ba8]█"

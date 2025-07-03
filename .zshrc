@@ -85,6 +85,8 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 # zinit light zoxide/zoxide # Let Zinit manage zoxide for better integration
 
+autoload -U compinit && compinit
+
 # ZSTYLE
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -109,4 +111,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Created by `pipx` on 2025-06-23 12:13:55
 export PATH="$PATH:/home/anipr2002/.local/bin"
+eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
